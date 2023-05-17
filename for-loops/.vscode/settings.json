@@ -553,7 +553,7 @@
 	"editor.minimap.autohide": false,
 
 	// Controls whether the minimap is shown.
-	"editor.minimap.enabled": true,
+	"editor.minimap.enabled": false,
 
 	// Limit the width of the minimap to render at most a certain number of columns.
 	"editor.minimap.maxColumn": 120,
@@ -755,10 +755,6 @@
 
 	// Emulate selection behavior of tab characters when using spaces for indentation. Selection will stick to tab stops.
 	"editor.stickyTabStops": false,
-
-	// This setting is deprecated, please use separate settings like 'editor.suggest.showKeywords' or 'editor.suggest.showSnippets' instead.
-	// 
-	"editor.suggest.filteredTypes": {},
 
 	// Controls whether filtering and sorting suggestions accounts for small typos.
 	"editor.suggest.filterGraceful": true,
@@ -1643,7 +1639,7 @@
 	//  - afterDelay: An editor with changes is automatically saved after the configured `files.autoSaveDelay`.
 	//  - onFocusChange: An editor with changes is automatically saved when the editor loses focus.
 	//  - onWindowChange: An editor with changes is automatically saved when the window loses focus.
-	"files.autoSave": "off",
+	"files.autoSave": "afterDelay",
 
 	// Controls the delay in milliseconds after which an editor with unsaved changes is saved automatically. Only applies when `files.autoSave` is set to `afterDelay`.
 	"files.autoSaveDelay": 1000,
@@ -1959,10 +1955,6 @@
 
 	// Controls whether the search view should read or modify the shared find clipboard on macOS.
 	"search.globalFindClipboard": false,
-
-	// This setting is deprecated. You can drag the search icon to a new location instead.
-	// Controls whether the search will be shown as a view in the sidebar or as a panel in the panel area for more horizontal space.
-	"search.location": "sidebar",
 
 	// The search cache is kept in the extension host which never shuts down, so this setting is no longer needed.
 	// When enabled, the searchService process will be kept alive instead of being shut down after an hour of inactivity. This will keep the file search cache in memory.
@@ -4076,7 +4068,7 @@
 	"terminal.integrated.splitCwd": "inherited",
 
 	// Controls whether the terminal receives tabs or defers them to the workbench for navigation. When set, this overrides `editor.tabFocusMode` when the terminal is focused.
-	"terminal.integrated.tabFocusMode": null,
+	"terminal.integrated.tabFocusMode": false,
 
 	// A theme color ID to associate with terminal icons by default.
 	"terminal.integrated.tabs.defaultColor": null,
@@ -6247,6 +6239,6 @@
 	"vsintellicode.sql.completionsEnabled": true,
 
 	// Enable Visual Studio IntelliCode completions for TypeScript and JavaScript
-	"vsintellicode.typescript.completionsEnabled": true
+	"vsintellicode.typescript.completionsEnabled": true,
 
 }
