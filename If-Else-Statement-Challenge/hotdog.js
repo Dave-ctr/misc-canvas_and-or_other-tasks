@@ -5,3 +5,5 @@ function saleHotdogs(n) {
 }
 
 console.log(saleHotdogs(22));
+
+// 
